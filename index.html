@@ -1,135 +1,142 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="log_in_stylesheet.css">
 	<title>Log-in Page</title>
+	<script src="form.js"></script>
 </head>
+
 <body>
-<div id="Log-in_Page">
-	<div id="Right_Panel">
-		<svg class="Right_Panel_Background">
-			<rect id="Right_Panel_Background" rx="0" ry="0" x="0" y="0" width="959" height="1081">
-			</rect>
-		</svg>
-		<div id="Log_In_Box">
-			<svg class="Log_In_Background">
-				<rect id="Log_In_Background" rx="33" ry="33" x="0" y="0" width="698" height="533">
+	<div id="Log-in_Page">
+		<div id="Right_Panel">
+			<svg class="Right_Panel_Background">
+				<rect id="Right_Panel_Background" rx="0" ry="0" x="0" y="0" width="959" height="1081">
 				</rect>
 			</svg>
-			<div onclick="new_game.html" id="Log_In_Button">
-				<svg class="Log_In_Button_Background">
-					<rect id="Log_In_Button_Background" rx="13" ry="13" x="0" y="0" width="564" height="53">
+			<div id="Log_In_Box">
+				<svg class="Log_In_Background">
+					<rect id="Log_In_Background" rx="33" ry="33" x="0" y="0" width="698" height="533">
 					</rect>
 				</svg>
-				<div id="Log_In_Button_Text">
-					<span>Log In</span>
+				<div onclick="new_game.html" id="Log_In_Button">
+					<svg class="Log_In_Button_Background">
+						<rect id="Log_In_Button_Background" rx="13" ry="13" x="0" y="0" width="564" height="53">
+						</rect>
+					</svg>
+					<div id="Log_In_Button_Text">
+						<span>Log In</span>
+					</div>
 				</div>
-			</div>
-			<div id="Password">
-				<!-- <svg class="Password_Input_a">
+				<div id="Password">
+					<!-- <svg class="Password_Input_a">
 					<rect id="Password_Input_a" rx="13" ry="13" x="0" y="0" width="564" height="53">
 					</rect>
 				</svg>
 				<div id="Password_Title">
 					<span>Password</span>
 				</div> -->
-				<form>
-					<label id="Password_Title" for="password_input_a">Password</label><br><br>
-					<input type="text" id="Password_Input_a" name="password_input_a" placeholder="Password">
-				</form>
-			</div>
-			<div id="EmailUsername">
-				<!-- <svg class="EmailUsername_Input">
+					<form>
+						<label id="Password_Title" for="password_input_a">Password</label><br><br>
+						<input type="text" id="Password_Input_a" name="password_input_a" placeholder="Password">
+					</form>
+				</div>
+				<div id="EmailUsername">
+					<!-- <svg class="EmailUsername_Input">
 					<rect id="EmailUsername_Input" rx="13" ry="13" x="0" y="0" width="564" height="53">
 					</rect>
 				</svg> -->
-				<!-- <div id="EmailUsername_Title">
+					<!-- <div id="EmailUsername_Title">
 					<span>Email/Username</span>
 				</div> -->
-				<form>
-					<label id="EmailUsername_Title" for="emailusername_input">Email/Username</label><br><br>
-					<input type="text" class="EmailUserName_Input" name="emailusername_input" placeholder="Email/Username">
-				</form>
-			</div>
-			<div id="Log_In_Section_Title">
-				<span>Log In</span>
-			</div>
-		</div>
-	</div>
-	<div id="Game_Title">
-		<span>Hangman</span>
-	</div>
-	<div id="Create_Account">
-		<div onclick="new_game.html" id="Create_Account_Button">
-			<svg class="Create_Account_Background">
-				<rect id="Create_Account_Background" rx="13" ry="13" x="0" y="0" width="564" height="53">
-				</rect>
-			</svg>
-			<div id="Create_Account_Text">
-				<span>Create Account</span>
+					<form>
+						<label id="EmailUsername_Title" for="emailusername_input">Email/Username</label><br><br>
+						<input type="text" class="EmailUserName_Input" name="emailusername_input"
+							placeholder="Email/Username">
+					</form>
+				</div>
+				<div id="Log_In_Section_Title">
+					<span>Log In</span>
+				</div>
 			</div>
 		</div>
-		<div id="Retype_Password">
-			<!-- <svg class="Re-type_Password_Input">
+		<div id="Game_Title">
+			<span>Hangman</span>
+		</div>
+		<div id="Create_Account">
+			<form id="signupForm">
+				<div id="Create_Account_Button">
+				<!-- <div onclick="new_game.html" id="Create_Account_Button"> -->
+					<!-- <svg class="Create_Account_Background"> -->
+						<!-- <rect id="Create_Account_Background" rx="13" ry="13" x="0" y="0" width="564" height="53"> -->
+						<!-- </rect> -->
+					<!-- </svg> -->
+					<div id="Create_Account_Text">
+						<!-- added in for testing purposes, will need to edit later -->
+						<input type="submit" value="Create Account">
+						<!-- <span>Create Account</span> -->
+					</div>
+				</div>
+
+				<!-- form tags and form id needed for database interactions -->
+				<div id="Retype_Password">
+					<!-- <svg class="Re-type_Password_Input">
 				<rect id="Re-type_Password_Input" rx="13" ry="13" x="0" y="0" width="564" height="53">
 				</rect>
 			</svg>
 			<div id="Re-type_Password">
 				<span>Re-type Password</span>
 			</div> -->
-			<form>
-				<label id="Re-type_Password" for="retype_input">Re-type Password</label><br><br>
-				<input type="text" class="Re-type_Password_Input" name="retype_input" placeholder="Password">
-			</form>
-		</div>
-		<div id="Password">
-			<!-- <svg class="Password_Input">
+					<label id="Re-type_Password" for="pass_retype">Re-type Password</label><br><br>
+					<input type="password" class="Re-type_Password_Input" name="pass_retype" id="pass_retype"
+						placeholder="Password">
+				</div>
+				<div id="Password">
+					<!-- <svg class="Password_Input">
 				<rect id="Password_Input" rx="13" ry="13" x="0" y="0" width="564" height="53">
 				</rect>
 			</svg>
 			<div id="Password_">
 				<span>Password</span>
 			</div> -->
-			<form>
-				<label id="Password_" for="password_input">Password</label><br><br>
-				<input type="text" class="Password_Input" name="password_input" placeholder="Password">
-			</form>
-		</div>
-		<div id="Username">
-			<!-- <svg class="Username_Input">
+					<label id="Password_" for="pass">Password</label><br><br>
+					<input type="password" class="Password_Input" name="pass" id="pass"
+						placeholder="Password">
+				</div>
+				<div id="Username">
+					<!-- <svg class="Username_Input">
 				<rect id="Username_Input" rx="13" ry="13" x="0" y="0" width="564" height="53">
 				</rect>
 			</svg>
 			<div id="Username_">
 				<span>Username</span>
 			</div> -->
-			<form>
-				<label id="Username_" for="username_input">Username</label><br><br>
-				<input type="text" class="Username_Input" name="username_input" placeholder="Username">
-			</form>
-		</div>
-		<div id="Email">
-			<!-- <svg class="Email_Input">
+					<label id="Username_" for="user">Username</label><br><br>
+					<input type="text" class="Username_Input" name="user" id="user" placeholder="Username">
+				</div>
+				<div id="Email">
+					<!-- <svg class="Email_Input">
 				<rect id="Email_Input" rx="13" ry="13" x="0" y="0" width="564" height="53">
 				</rect>
 			</svg>
 			<div id="Email_">
 				<span>Email</span>
 			</div> -->
-			<form>
-				<label id="Email_" for="email_input">Email</label><br><br>
-				<input type="text" class="Email_Input" name="email_input" placeholder="Email">
+					<label id="Email_" for="email">Email</label><br><br>
+					<input type="email" class="Email_Input" name="email" id="email" placeholder="Email">
+				</div>
 			</form>
+
+			<div id="Create_an_account">
+				<span>Create an account</span>
+			</div>
 		</div>
-		<div id="Create_an_account">
-			<span>Create an account</span>
-		</div>
+		<img id="Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
+
 	</div>
-	<img id="Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
-		
-</div>
 </body>
+
 </html>
