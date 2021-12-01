@@ -166,7 +166,7 @@
     overflow: visible;
 }
 
-input[type=text] {
+input[type=text], input[type=password], input[type=email] {
     font-family: Roboto;
     padding: 10px;
     width: 564px;
