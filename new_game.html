@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="new_game_stylesheet.css">
+	<title>New Game Page</title>
+</head>
+<body>
+<div id="New_Game_Page">
+	<div id="Game_Title">
+		<span>Hangman</span>
+	</div>
+	<img id="hangman" src="hangman.png" srcset="hangman.png 1x, hangman@2x.png 2x">
+	<div id="Choose_Difficulty">
+		<!-- <svg class="Difficulty_Background">
+		  <rect id="Difficulty_Background" rx="5" ry="5" x="0" y="0" width="333" height="51">
+		  </rect>
+		</svg> -->
+		<!-- <div id="Choose_your_difficulty">
+			<span>Choose your difficulty</span>
+		</div> -->
+		<div class="dropdown">
+			<button class="dropdown_button">Choose the difficulty</button>
+			<div class="dropdown_options">
+				<a href="#">Easy</a>
+				<a href="#">Medium</a>
+				<a href="#">Hard</a>
+			</div>
+		</div>
+	</div>
+	<div id="Choose_Category_Dropdown">
+        <div class="dropdown">
+			<button class="dropdown_button">Choose the category</button>
+			<div class="dropdown_options">
+				<a href="#">Cars</a>
+				<a href="#">Cities</a>
+				<a href="#">Animals</a>
+                <a href="#">Holidays</a>
+			</div>
+		</div>
+		<!-- <div id="Category_Background">
+		  <svg class="Category_Background_s">
+		    <rect id="Category_Background_s" rx="5" ry="5" x="0" y="0" width="333" height="54">
+		    </rect>
+		  </svg>
+		  <div id="Choose_your_category">
+		    <span>Choose your category</span>
+		  </div>
+		</div> -->
+		<!-- <div id="Down_Arrow">
+		  <svg class="L_Line" viewBox="0 0 18 14">
+		    <path id="L_Line" d="M 0 0 L 18 14">
+		    </path>
+		  </svg>
+		  <svg class="R_Line" viewBox="0 0 19 14">
+		    <path id="R_Line" d="M 19 0 L 0 14">
+		    </path>
+		  </svg>
+		</div> -->
+	</div>
+	<!-- <div id="Down_Arrow_x">
+	  <svg class="L_Line_y" viewBox="0 0 18 14">
+	    <path id="L_Line_y" d="M 0 0 L 18 14">
+	    </path>
+	  </svg>
+	  <svg class="R_Line_z" viewBox="0 0 19 14">
+	    <path id="R_Line_z" d="M 19 0 L 0 14">
+	    </path>
+	  </svg>
+	</div> -->
+	<div onclick="main_game.html" id="Play_Button">
+		<svg class="Play_Background">
+			<rect id="Play_Background" rx="13" ry="13" x="0" y="0" width="333" height="53">
+			</rect>
+		</svg>
+		<div id="Play_Text">
+			<span>Play</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

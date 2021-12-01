@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main_page_stylesheet.css">
+	<title>Main Game Page</title>
+</head>
+<body>
+<div id="Main_Game_Page">
+	<div id="Hanger">
+		<svg class="Hanger_Line" viewBox="0 0 394 5">
+			<path id="Hanger_Line_1" d="M 0 0 L 394 0">
+			</path>
+		</svg>
+		<svg class="Hanger_Line" viewBox="0 0 5 636">
+			<path id="Hanger_Line_2" d="M 0 636 L 0 0">
+			</path>
+		</svg>
+		<svg class="Hanger_Line" viewBox="0 0 178 5">
+			<path id="Hanger_Line_3" d="M 0 0 L 178 0">
+			</path>
+		</svg>
+		<svg class="Hanger_Line" viewBox="0 0 5 124">
+			<path id="Hanger_Line_4" d="M 0 0 L 0 124">
+			</path>
+		</svg>
+	</div>
+	<svg class="Hangman">
+		<ellipse id="Head" rx="58" ry="58" cx="58" cy="58">
+		</ellipse>
+	</svg>
+	<svg class="Hangman" viewBox="0 0 1 196">
+		<path id="Hangman_Body" d="M 0 0 L 0 196">
+		</path>
+	</svg>
+	<svg class="Hangman" viewBox="0 0 70 72">
+		<path id="Hangman_L_Leg" d="M 0 72 L 70 0">
+		</path>
+	</svg>
+	<svg class="Hangman" viewBox="0 0 58 72">
+		<path id="Hangman_R_Leg" d="M 58 72 L 0 0">
+		</path>
+	</svg>
+	<svg class="Hangman" viewBox="0 0 82 50">
+		<path id="Hangman_R_Arm" d="M 0 50 L 82 0">
+		</path>
+	</svg>
+	<svg class="Hangman" viewBox="0 0 70 50">
+		<path id="Hangman_L_Arm" d="M 0 0 L 70 50">
+		</path>
+	</svg>
+	<div id="Letters">
+		<div id="A_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="a">
+				<span>a</span>
+			</div>
+		</div>
+		<div id="B_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="b">
+				<span>b</span>
+			</div>
+		</div>
+		<div id="C_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="c">
+				<span>c</span>
+			</div>
+		</div>
+		<div id="D_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="d">
+				<span>d</span>
+			</div>
+		</div>
+		<div id="E_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="e">
+				<span>e</span>
+			</div>
+		</div>
+		<div id="F_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="f">
+				<span>f</span>
+			</div>
+		</div>
+		<div id="G_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="g">
+				<span>g</span>
+			</div>
+		</div>
+		<div id="H_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="h">
+				<span>h</span>
+			</div>
+		</div>
+		<div id="I_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="i">
+				<span>i</span>
+			</div>
+		</div>
+		<div id="J_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="j">
+				<span>j</span>
+			</div>
+		</div>
+		<div id="K_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="k">
+				<span>k</span>
+			</div>
+		</div>
+		<div id="L_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="l">
+				<span>l</span>
+			</div>
+		</div>
+		<div id="M_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="m">
+				<span>m</span>
+			</div>
+		</div>
+		<div id="N_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="n">
+				<span>n</span>
+			</div>
+		</div>
+		<div id="O_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="o">
+				<span>o</span>
+			</div>
+		</div>
+		<div id="P_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="p">
+				<span>p</span>
+			</div>
+		</div>
+		<div id="Q_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="q">
+				<span>q</span>
+			</div>
+		</div>
+		<div id="R_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="r">
+				<span>r</span>
+			</div>
+		</div>
+		<div id="S_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="s">
+				<span>s</span>
+			</div>
+		</div>
+		<div id="T_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="t">
+				<span>t</span>
+			</div>
+		</div>
+		<div id="U_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="u">
+				<span>u</span>
+			</div>
+		</div>
+		<div id="V_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="v">
+				<span>v</span>
+			</div>
+		</div>
+		<div id="W_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="w">
+				<span>w</span>
+			</div>
+		</div>
+		<div id="X_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="x">
+				<span>x</span>
+			</div>
+		</div>
+		<div id="Y_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="y">
+				<span>y</span>
+			</div>
+		</div>
+		<div id="Z_button">
+			<svg class="Letter_Rectangle">
+				<rect id="Letter_Rectangle" rx="5" ry="5" x="0" y="0" width="50" height="50">
+				</rect>
+			</svg>
+			<div id="z">
+				<span>z</span>
+			</div>
+		</div>
+	</div>
+	<div id="Word_Lines">
+		<div id="Word_Lines_Group" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Line_10" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Line_1" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Word_Line" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Line_2" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Word_Line" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Line_3" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Word_Line" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Line_4" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Word_Line" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Line_5" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Word_Line" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+		<div id="Line_6" class="">
+			<svg class="Word_Line" viewBox="0 0 98 1">
+				<path id="Word_Line" d="M 0 1 L 98 0">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="Header">
+		<rect id="Header" rx="0" ry="0" x="0" y="0" width="1920" height="165">
+		</rect>
+	</svg>
+	<div id="Game_Title">
+		<span>Hangman</span>
+	</div>
+	<img id="Hangman_Img" src="hangman.png" srcset="hangman.png 1x, hangman@2x.png 2x">
+		
+	<div id="Account_Settings_Button">
+		<svg class="Account_Settings_Background">
+			<rect id="Account_Settings_Background" rx="13" ry="13" x="0" y="0" width="237" height="53">
+			</rect>
+		</svg>
+		<div id="Account_Settings">
+			<span>Account Settings</span>
+		</div>
+	</div>
+	<div id="New_Game_Button">
+		<svg class="New_Game_Background">
+			<rect id="New_Game_Background" rx="13" ry="13" x="0" y="0" width="230" height="53">
+			</rect>
+		</svg>
+		<div id="New_Game">
+			<span>New Game</span>
+		</div>
+	</div>
+	<div id="Wins">
+		<span>Wins: 4</span>
+	</div>
+	<div id="Losses">
+		<span>Losses: 3</span>
+	</div>
+</div>
+</body>
+</html>
