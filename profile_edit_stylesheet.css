@@ -1,0 +1,393 @@
+#Profile_Edit_Page {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: Account Settings Page;
+  --web-view-id: Account_Settings_Page;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+
+#Header {
+  fill: rgba(124, 152, 179, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Header {
+  position: absolute;
+  overflow: visible;
+  width: 1920px;
+  height: 165px;
+  left: 0px;
+  top: 0px;
+}
+#Game_Title {
+  left: 894px;
+  top: 56px;
+  position: absolute;
+  overflow: visible;
+  width: 175px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+#Hangman_Img {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 811px;
+  top: 55px;
+  overflow: visible;
+}
+#Account_Settings_Button {
+  position: absolute;
+  width: 237px;
+  height: 53px;
+  left: 1613px;
+  top: 56px;
+  overflow: visible;
+}
+#Account_Settings_Background {
+  fill: rgba(172, 203, 225, 1);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Account_Settings_Background {
+  position: absolute;
+  overflow: visible;
+  width: 237px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#Account_Settings {
+  left: 24px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 186px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+#New_Game_Button {
+  position: absolute;
+  width: 230px;
+  height: 53px;
+  left: 70px;
+  top: 56px;
+  overflow: visible;
+}
+#New_Game_Background {
+  fill: rgba(172, 203, 225, 1);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.New_Game_Background {
+  position: absolute;
+  overflow: visible;
+  width: 230px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#New_Game {
+  left: 57px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 117px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#Account_Settings_Text {
+  left: 77px;
+  top: 220px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  color: rgba(85, 85, 85, 1);
+}
+#Username_Text {
+  left: 180px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#abcd123_Text {
+  left: 400px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Change_Username_Text {
+  left: 770px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(124, 152, 179);
+  text-decoration: underline;
+}
+
+#Change_Username_Text:hover {
+  color: rgb(85, 85, 85);
+}
+
+#Password_Text {
+  left: 180px;
+  top: 380px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#password123_Text {
+  left: 400px;
+  top: 380px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Change_Password_Text {
+  left: 770px;
+  top: 380px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(124, 152, 179);
+  text-decoration: underline;
+}
+
+#Change_Password_Text:hover {
+  color: rgb(85, 85, 85);
+}
+
+#Wins_Text {
+  left: 245px;
+  top: 460px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Wins_Amount_Text {
+  left: 400px;
+  top: 460px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Losses_Text {
+  left: 220px;
+  top: 540px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Losses_Amount_Text {
+  left: 400px;
+  top: 540px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Games_Played_Text {
+  left: 120px;
+  top: 620px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Games_Amount_Text {
+  left: 400px;
+  top: 620px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Words_Played_Text {
+  left: 130px;
+  top: 700px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+#Words_Text {
+  left: 400px;
+  top: 700px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Back_Button {
+  position: absolute;
+  width: 564px;
+  height: 53px;
+  left: 700px;
+  top: 850px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: new_game_page.html;
+  cursor: pointer;
+}
+#Back_Button_Background {
+  fill: rgba(172, 203, 225, 1);
+  shape-rendering: auto;
+}
+.Back_Button_Background {
+  position: absolute;
+  overflow: visible;
+  width: 564px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#Back_Button_Text {
+  left: 200px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 68px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
