@@ -62,6 +62,8 @@ function generateButtons() {
   function checkIfGameWon() {
     if (wordStatus === answer) {
       document.getElementById('keyboard').innerHTML = 'You Won!!!';
+      wins++
+      document.getElementById('win_tot').innerHTML = wins;
     }
   }
   
@@ -69,6 +71,8 @@ function generateButtons() {
     if (mistakes === maxWrong) {
       document.getElementById('wordSpotlight').innerHTML = 'The answer was: ' + answer;
       document.getElementById('keyboard').innerHTML = 'You Lost!!!';
+      loss++;
+      document.getElementById('loss_tot').innerHTML = loss;
     }
   }
 
