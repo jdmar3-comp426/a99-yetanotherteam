@@ -936,7 +936,7 @@
     color: rgba(255,255,255,1);
 }
 #Wins {
-    left: 1295px;
+    left: 1148px;
     top: 67px;
     position: absolute;
     overflow: visible;
@@ -950,6 +950,20 @@
     color: rgba(255,255,255,1);
 }
 #Losses {
+    left: 1295px;
+    top: 67px;
+    position: absolute;
+    overflow: visible;
+    width: 105px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+#Lives {
     left: 1442px;
     top: 67px;
     position: absolute;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./main.css">
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container">
+    <div class="banner_head">
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+        <img src="./images/hangman@2x.png">
+        <h1 class="text-center">Hangman</h1>
+        <div class="attempts">
+          <p>&emsp;Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></p>
+        </div>
+        <div class="game_count">
+            <p>&emsp;&emsp;Win: <span class="Wins">0</span> &emsp;Losses: <span class="Losses">0</span></p>
+        </div> 
+    </div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.png" alt="">
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div><br>
+    <button id="new_game_button" onClick="reset()">New Game</button>
+    <button id="account_settings_button" onClick="load_act_settings()">Account Settings</button>
+  </div> 
+</div>
+<script src='./game.js'></script>
+</body>
+</html>

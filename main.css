@@ -1,0 +1,122 @@
+.text-center{
+    text-align: center;
+}
+.attempts{
+    text-align: right;
+}
+
+
+.banner_head{
+    background-color: rgba(124,152,179,1);
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-size: 32px;
+}
+
+
+.banner_head img{
+    float: center;
+    width: 75px;
+    height: 75px;
+}
+
+
+body {
+    text-align: center;
+}
+
+.wrap {
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.banner_head > *{
+    display: inline-block;
+    
+}
+
+#new_game_button{
+    float: left;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,1);
+    background-color: rgba(172,203,225,1);
+    text-align: center;
+    display: inline-block;
+    margin: 40px;
+    width: 200px;
+    height: 50px;
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#account_settings_button{
+    float: right;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,1);
+    background-color: rgba(172,203,225,1);
+    text-align: center;
+    display: inline-block;
+    margin: 40px;
+    width: 200px;
+    height: 50px;
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+
+.keyboard_buttons{
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    color: rgba(112,112,112,1);
+    background-color: rgba(172,203,225,0.502);
+    border-radius: 8px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    padding: 2px;
+    width: 50px;
+}
+
+.attempts{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+.game_count{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+.float-right{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+#wordSpotlight{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size:50px; 
+    margin-top: 0px;
+    text-align: center;
+}
