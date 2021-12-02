@@ -1,979 +1,121 @@
-/* .mediaViewInfo {
-    --web-view-name: Main Game Page;
-    --web-view-id: Main_Game_Page;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
+.text-center{
+    text-align: center;
 }
-:root {
-    --web-view-ids: Main_Game_Page;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-} */
-#Main_Game_Page {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    background-color: rgba(255,255,255,1);
-    overflow: hidden;
-    --web-view-name: Main Game Page;
-    --web-view-id: Main_Game_Page;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-#Hanger {
-    position: absolute;
-    width: 394px;
-    height: 636px;
-    left: 260.5px;
-    top: 228.5px;
-    overflow: visible;
-}
-#Hanger_Line {
-    fill: transparent;
-    stroke: rgba(112,112,112,1);
-    stroke-width: 5px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Line_1 {
-    overflow: visible;
-    position: absolute;
-    width: 394px;
-    height: 5px;
-    left: 0px;
-    top: 636px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Line_2 {
-    overflow: visible;
-    position: absolute;
-    width: 5px;
-    height: 636px;
-    left: 197px;
-    top: 0px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Line_3 {
-    overflow: visible;
-    position: absolute;
-    width: 178px;
-    height: 5px;
-    left: 197px;
-    top: 0px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Line_4 {
-    overflow: visible;
-    position: absolute;
-    width: 5px;
-    height: 124px;
-    left: 375px;
-    top: 0px;
-    transform: matrix(1,0,0,1,0,0);
-}
-#Hangman {
-    fill: transparent;
-    stroke: rgba(112,112,112,1);
-    stroke-width: 2px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Head {
-    position: absolute;
-    overflow: visible;
-    width: 116px;
-    height: 116px;
-    left: 576px;
-    top: 348px;
-}
-.Hangman_Body {
-    overflow: visible;
-    position: absolute;
-    width: 1px;
-    height: 196px;
-    left: 634.5px;
-    top: 464.5px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Hangman_L_Leg {
-    overflow: visible;
-    position: absolute;
-    width: 70.717px;
-    height: 72.697px;
-    left: 564.5px;
-    top: 660.5px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Hangman_R_Leg {
-    overflow: visible;
-    position: absolute;
-    width: 58.778px;
-    height: 72.627px;
-    left: 634.5px;
-    top: 660.5px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Hangman_R_Arm {
-    overflow: visible;
-    position: absolute;
-    width: 82.521px;
-    height: 50.854px;
-    left: 634.5px;
-    top: 490.5px;
-    transform: matrix(1,0,0,1,0,0);
-}
-.Hangman_L_Arm {
-    overflow: visible;
-    position: absolute;
-    width: 70.581px;
-    height: 50.814px;
-    left: 564.5px;
-    top: 490.5px;
-    transform: matrix(1,0,0,1,0,0);
-}
-#Letters {
-    position: absolute;
-    width: 890px;
-    height: 120px;
-    left: 909px;
-    top: 229px;
-    overflow: visible;
-}
-#A_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#Letter_Rectangle {
-    fill: rgba(172,203,225,0.502);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: bevel;
-    stroke-linecap: round;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Letter_Rectangle {
-    position: absolute;
-    overflow: visible;
-    width: 50px;
-    height: 50px;
-    left: 0px;
-    top: 0px;
-}
-#a {
-    left: 16px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 19px;
-    white-space: nowrap;
+.attempts{
     text-align: right;
+}
+
+
+.banner_head{
+    background-color: rgba(124,152,179,1);
+    color: rgba(255,255,255,1);
     font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
+    font-size: 32px;
 }
-#B_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 70px;
-    top: 0px;
-    overflow: visible;
+
+
+.banner_head img{
+    float: center;
+    width: 75px;
+    height: 75px;
 }
-#b {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
+
+body {
+    text-align: center;
 }
-#C_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 140px;
-    top: 0px;
-    overflow: visible;
-}
-#c {
-    left: 16px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 19px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#D_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 210px;
-    top: 0px;
-    overflow: visible;
-}
-#d {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#E_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 280px;
-    top: 0px;
-    overflow: visible;
-}
-#e {
-    left: 16px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 19px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#F_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 350px;
-    top: 0px;
-    overflow: visible;
-}
-#f {
-    left: 19px;
-    top: 3px;
-    position: absolute;
-    overflow: visible;
-    width: 13px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#G_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 420px;
-    top: 0px;
-    overflow: visible;
-}
-#g {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#H_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 490px;
-    top: 0px;
-    overflow: visible;
-}
-#h {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#I_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 560px;
-    top: 0px;
-    overflow: visible;
-}
-#i {
-    left: 21px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 10px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#J_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 630px;
-    top: 0px;
-    overflow: visible;
-}
-#j {
-    left: 20px;
-    top: 3px;
-    position: absolute;
-    overflow: visible;
-    width: 11px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#K_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 700px;
-    top: 0px;
-    overflow: visible;
-}
-#k {
-    left: 16px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 19px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#L_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 770px;
-    top: 0px;
-    overflow: visible;
-}
-#l {
-    left: 21px;
-    top: 3px;
-    position: absolute;
-    overflow: visible;
-    width: 10px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#M_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 840px;
-    top: 0px;
-    overflow: visible;
-}
-#m {
-    left: 11px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 30px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#N_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 0px;
-    top: 70px;
-    overflow: visible;
-}
-#n {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#O_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 70px;
-    top: 70px;
-    overflow: visible;
-}
-#o {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#P_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 140px;
-    top: 70px;
-    overflow: visible;
-}
-#p {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#Q_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 210px;
-    top: 70px;
-    overflow: visible;
-}
-#q {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#R_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 280px;
-    top: 70px;
-    overflow: visible;
-}
-#r {
-    left: 22px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 13px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#S_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 350px;
-    top: 70px;
-    overflow: visible;
-}
-#s {
-    left: 17px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 18px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#T_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 420px;
-    top: 70px;
-    overflow: visible;
-}
-#t {
-    left: 20px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 12px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#U_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 490px;
-    top: 70px;
-    overflow: visible;
-}
-#u {
-    left: 15px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 20px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#V_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 560px;
-    top: 70px;
-    overflow: visible;
-}
-#v {
-    left: 17px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 18px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#W_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 630px;
-    top: 70px;
-    overflow: visible;
-}
-#w {
-    left: 9px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 26px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#X_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 700px;
-    top: 70px;
-    overflow: visible;
-}
-#x {
-    left: 17px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 18px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#Y_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 770px;
-    top: 70px;
-    overflow: visible;
-}
-#y {
-    left: 17px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 18px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#Z_button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 840px;
-    top: 70px;
-    overflow: visible;
-}
-#z {
-    left: 17px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 18px;
-    white-space: nowrap;
-    text-align: right;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    color: rgba(112,112,112,1);
-}
-#Word_Lines {
-    position: absolute;
-    width: 821.505px;
-    height: 2px;
-    left: 909.495px;
-    top: 758px;
+
+.wrap {
+    margin: 0 auto;
+    display: inline-block;
     overflow: hidden;
 }
-#Word_Lines_Group {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 0.005px;
-    top: 0.5px;
-    overflow: visible;
+
+.banner_head > *{
+    display: inline-block;
+    
 }
-#Word_Line {
-    fill: transparent;
-    stroke: rgba(112,112,112,1);
-    stroke-width: 3px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Word_Line {
-    overflow: visible;
-    position: absolute;
-    width: 98.03px;
-    height: 4px;
-    left: 0px;
-    top: 0px;
-    transform: matrix(1,0,0,1,0,0);
-}
-#Line_1 {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 119.005px;
-    top: 0.5px;
-    overflow: visible;
-}
-#Line_2 {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 238.005px;
-    top: 0.5px;
-    overflow: visible;
-}
-#Line_3 {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 357.005px;
-    top: 0.5px;
-    overflow: visible;
-}
-#Line_4 {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 476.005px;
-    top: 0.5px;
-    overflow: visible;
-}
-#Line_5 {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 595.005px;
-    top: 0.5px;
-    overflow: visible;
-}
-#Line_6 {
-    position: absolute;
-    width: 98px;
-    height: 1px;
-    left: 714.005px;
-    top: 0.5px;
-    overflow: visible;
-}
-#Header {
-    fill: rgba(124,152,179,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Header {
-    position: absolute;
-    overflow: visible;
-    width: 1920px;
-    height: 165px;
-    left: 0px;
-    top: 0px;
-}
-#Game_Title {
-    left: 894px;
-    top: 56px;
-    position: absolute;
-    overflow: visible;
-    width: 175px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
+
+#new_game_button{
+    float: left;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,1);
+    background-color: rgba(172,203,225,1);
+    text-align: center;
+    display: inline-block;
+    margin: 40px;
+    width: 200px;
+    height: 50px;
     color: rgba(255,255,255,1);
-}
-#Hangman_Img {
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    left: 811px;
-    top: 55px;
-    overflow: visible;
-}
-#Account_Settings_Button {
-    position: absolute;
-    width: 237px;
-    height: 53px;
-    left: 1613px;
-    top: 56px;
-    overflow: visible;
-}
-#Account_Settings_Background {
-    fill: rgba(172,203,225,1);
-    stroke: rgba(255,255,255,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Account_Settings_Background {
-    position: absolute;
-    overflow: visible;
-    width: 237px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
-}
-#Account_Settings {
-    left: 24px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 186px;
-    white-space: nowrap;
-    text-align: left;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+}
+
+#account_settings_button{
+    float: right;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,1);
+    background-color: rgba(172,203,225,1);
+    text-align: center;
+    display: inline-block;
+    margin: 40px;
+    width: 200px;
+    height: 50px;
     color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px; 
 }
-#New_Game_Button {
-    position: absolute;
-    width: 230px;
-    height: 53px;
-    left: 70px;
-    top: 56px;
+
+
+.keyboard_buttons{
     overflow: visible;
-}
-#New_Game_Background {
-    fill: rgba(172,203,225,1);
-    stroke: rgba(255,255,255,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.New_Game_Background {
-    position: absolute;
-    overflow: visible;
-    width: 230px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
-}
-#New_Game {
-    left: 57px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 117px;
     white-space: nowrap;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
+    font-size: 34px;
+    color: rgba(112,112,112,1);
+    background-color: rgba(172,203,225,0.502);
+    border-radius: 8px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    padding: 2px;
+    width: 50px;
 }
-#Wins {
-    left: 1148px;
-    top: 67px;
-    position: absolute;
-    overflow: visible;
-    width: 81px;
-    white-space: nowrap;
-    text-align: center;
+
+.attempts{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
+    font-size: 20px;
+    text-align: right;
 }
-#Losses {
-    left: 1295px;
-    top: 67px;
-    position: absolute;
-    overflow: visible;
-    width: 105px;
-    white-space: nowrap;
-    text-align: center;
+.game_count{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
+    font-size: 20px;
+    text-align: right;
 }
-#Lives {
-    left: 1442px;
-    top: 67px;
-    position: absolute;
-    overflow: visible;
-    width: 105px;
-    white-space: nowrap;
-    text-align: center;
+.float-right{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
+    font-size: 20px;
+    text-align: right;
+}
+
+#wordSpotlight{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size:50px; 
+    margin-top: 0px;
+    text-align: center;
 }
