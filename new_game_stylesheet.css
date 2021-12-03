@@ -1,64 +1,168 @@
-/* .mediaViewInfo {
-    --web-view-name: New Game Page;
-    --web-view-id: New_Game_Page;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-:root {
-    --web-view-ids: New_Game_Page;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-} */
 #New_Game_Page {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    background-color: rgba(124,152,179,1);
-    overflow: hidden;
-    --web-view-name: New Game Page;
-    --web-view-id: New_Game_Page;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: New Game Page;
+  --web-view-id: New_Game_Page;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+
+#Header {
+  fill: rgba(124, 152, 179, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Header {
+  position: absolute;
+  overflow: visible;
+  width: 1920px;
+  height: 165px;
+  left: 0px;
+  top: 0px;
 }
 #Game_Title {
-    left: 852px;
-    top: 226px;
-    position: absolute;
-    overflow: visible;
-    width: 218px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    color: rgba(255,255,255,1);
+  left: 894px;
+  top: 56px;
+  position: absolute;
+  overflow: visible;
+  width: 175px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+#Hangman_Img {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 811px;
+  top: 55px;
+  overflow: visible;
+}
+#Account_Settings_Button {
+  position: absolute;
+  width: 237px;
+  height: 53px;
+  left: 1613px;
+  top: 56px;
+  overflow: visible;
+}
+#Account_Settings_Background {
+  fill: rgba(172, 203, 225, 1);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Account_Settings_Background {
+  position: absolute;
+  overflow: visible;
+  width: 237px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#Account_Settings {
+  left: 24px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 186px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+#New_Game_Button {
+  position: absolute;
+  width: 230px;
+  height: 53px;
+  left: 70px;
+  top: 56px;
+  overflow: visible;
+}
+#New_Game_Background {
+  fill: rgba(172, 203, 225, 1);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.New_Game_Background {
+  position: absolute;
+  overflow: visible;
+  width: 230px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#New_Game {
+  left: 57px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 117px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#Page_Title {
+  left: 852px;
+  top: 280px;
+  position: absolute;
+  overflow: visible;
+  width: 218px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(124, 152, 179, 1);
 }
 #hangman {
-    position: absolute;
-    width: 98px;
-    height: 98px;
-    left: 911px;
-    top: 82px;
-    overflow: visible;
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  left: 930px;
+  top: 420px;
+  overflow: visible;
 }
+
 .dropdown_button {
-  /* background-color: #4CAF50; */
-  fill: rgba(255,255,255,1);
-  border: rgba(112,112,112,1);
-  border-radius: 13px;
-  color: rgba(112,112,112,1);
-  padding: 16px;
-  font-size: 24px;
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(112, 112, 112, 1);
+  border-style: solid;
+  border-radius: 5px;
+  border-width: thin;
+  color: rgba(112, 112, 112, 1);
+  font-size: 20px;
+  text-align: center;
   cursor: pointer;
   width: 333px;
-  height: 51px;
-  left: 794px;
-  top: 610px;
+  height: 53px;
   font-family: Roboto;
 }
 
@@ -66,15 +170,17 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  left: 810px;
+  top: 610px;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown_options {
   display: none;
   position: absolute;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   min-width: 333px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-family: Roboto;
   border-radius: 13px;
@@ -91,7 +197,9 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown_options a:hover {background-color: #f1f1f1}
+.dropdown_options a:hover {
+  background-color: #f1f1f1;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown_options {
@@ -103,45 +211,58 @@
   background-color: ;
 } */
 #Play_Button {
-    position: absolute;
-    width: 333px;
-    height: 53px;
-    left: 794px;
-    top: 860px;
-    overflow: visible;
-    --web-animation: fadein 0.3s ease-out;
-    --web-action-type: page;
-    --web-action-target: Main_Game_Page.html;
-    cursor: pointer;
+  position: absolute;
+  width: 333px;
+  height: 53px;
+  left: 820px;
+  top: 860px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Main_Game_Page.html;
+  cursor: pointer;
 }
 #Play_Background {
-    fill: rgba(172,203,225,1);
-    stroke: rgba(255,255,255,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: rgba(172, 203, 225, 1);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Play_Background {
-    position: absolute;
-    overflow: visible;
-    width: 333px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 333px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
 }
 #Play_Text {
-    left: 143px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 48px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
+  left: 143px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 48px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.category_dropdown {
+  position: relative;
+  display: inline-block;
+  left: 810px;
+  top: 650px;
+}
+
+/* Show the dropdown menu on hover */
+.category_dropdown:hover .dropdown_options {
+  display: block;
 }
