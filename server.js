@@ -39,7 +39,7 @@ app.get("/app/", (req, res, next) => {
 // Define other CRUD API endpoints using express.js and better-sqlite3
 
 // CREATE a new user (HTTP method POST) at endpoint /app/new/
-app.post("/app/new/user", upload.none(), (req, res, next) => {
+app.get("/app/new/user", upload.none(), (req, res, next) => {
     var data = {
         user: req.body.user,
         email: req.body.email,
@@ -69,7 +69,7 @@ app.post('/app/auth', function (req, res) {
     if (data.user && data.pass) {
         const stmt = db.prepare('SELECT * FROM userinfo WHERE user = ? AND pass = ?')
         const info = stmt.run(data.user, data.pass);
-        res.redirect('main_game.html');
+        res.redirect('new_game.html');
     }
 });
 

@@ -53,16 +53,17 @@ window.addEventListener("load", function () {
 
         // error handling
         sendRequest.addEventListener("error", function (event) {
-            alert("Submission unsuccessful, please check your input and try again");
+            alert("login unsuccessful, please check your username and password");
         });
 
         // success message
         sendRequest.addEventListener("load", function (event) {
             window.location.replace('new_game.html');
+            // alert("logged in")
         });
 
         // open endpoint and send data
-        sendRequest.open("POST", "http://localhost:5000/app/auth");
+        sendRequest.open("GET", "http://localhost:5000/app/auth");
         sendRequest.send(loginInfo);
     }
 
