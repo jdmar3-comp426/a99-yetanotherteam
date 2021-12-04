@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="username.js"></script>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,58 +12,18 @@
   </head>
   <body>
     <div id="Profile_Edit_Page">
-      <svg class="Header">
-        <rect
-          id="Header"
-          rx="0"
-          ry="0"
-          x="0"
-          y="0"
-          width="1920"
-          height="165"
-        ></rect>
-      </svg>
-      <div id="Game_Title">
-        <span>Hangman</span>
-      </div>
-      <img
-        id="Hangman_Img"
-        src="images/hangman.png"
-        srcset="images/hangman.png 1x, images/hangman@2x.png 2x"
-      />
-
-      <div id="Account_Settings_Button">
-        <svg class="Account_Settings_Background">
-          <rect
-            id="Account_Settings_Background"
-            rx="13"
-            ry="13"
-            x="0"
-            y="0"
-            width="237"
-            height="53"
-          ></rect>
-        </svg>
-        <div id="Account_Settings">
-          <span>Account Settings</span>
+      <header>
+        <a href="new_game.html" class="Header_Link">New Game</a>
+        <div id="Header">
+          <img
+            id="Hangman_Img"
+            src="images/hangman.png"
+            srcset="images/hangman.png 1x, images/hangman@2x.png 2x"
+          />
+          <h2 id="Hangman_Txt">Hangman</h2>
         </div>
-      </div>
-      <div id="New_Game_Button">
-        <svg class="New_Game_Background">
-          <rect
-            id="New_Game_Background"
-            rx="13"
-            ry="13"
-            x="0"
-            y="0"
-            width="230"
-            height="53"
-          ></rect>
-        </svg>
-        <div id="New_Game">
-          <span>New Game</span>
-        </div>
-      </div>
+        <a href="profile_edit.html" class="Header_Link">Profile</a>
+      </header>
 
       <div id="Account_Settings_Text">
         <span>Account Settings</span>
@@ -122,10 +85,10 @@
         <span>change password</span>
       </div>
 
-      <div onclick="new_game.html" id="Back_Button">
-        <svg class="Back_Button_Background">
+      <div id="Save_Button">
+        <svg class="Save_Button_Background">
           <rect
-            id="Back_Button_Background"
+            id="Save_Button_Background"
             rx="13"
             ry="13"
             x="0"
@@ -134,8 +97,8 @@
             height="53"
           ></rect>
         </svg>
-        <div id="Back_Button_Text">
-          <span>Back to Home</span>
+        <div id="Save_Button_Text">
+          <span>Save changes</span>
         </div>
       </div>
     </div>

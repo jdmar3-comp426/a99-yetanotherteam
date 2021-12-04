@@ -1,7 +1,8 @@
 #Profile_Edit_Page {
+  overflow-y: scroll;
   position: absolute;
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
   --web-view-name: Account Settings Page;
@@ -10,130 +11,46 @@
   --web-enable-deep-linking: true;
 }
 
-#Header {
-  fill: rgba(124, 152, 179, 1);
-  stroke: rgba(112, 112, 112, 1);
-  stroke-width: 1px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.Header {
-  position: absolute;
-  overflow: visible;
-  width: 1920px;
-  height: 165px;
-  left: 0px;
-  top: 0px;
-}
-#Game_Title {
-  left: 894px;
-  top: 56px;
-  position: absolute;
-  overflow: visible;
-  width: 175px;
-  white-space: nowrap;
-  text-align: left;
+* {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  color: rgba(255, 255, 255, 1);
-}
-#Hangman_Img {
-  position: absolute;
-  width: 56px;
-  height: 56px;
-  left: 811px;
-  top: 55px;
-  overflow: visible;
-}
-#Account_Settings_Button {
-  position: absolute;
-  width: 237px;
-  height: 53px;
-  left: 1613px;
-  top: 56px;
-  overflow: visible;
-}
-#Account_Settings_Background {
-  fill: rgba(172, 203, 225, 1);
-  stroke: rgba(255, 255, 255, 1);
-  stroke-width: 1px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.Account_Settings_Background {
-  position: absolute;
-  overflow: visible;
-  width: 237px;
-  height: 53px;
-  left: 0px;
-  top: 0px;
-}
-#Account_Settings {
-  left: 24px;
-  top: 11px;
-  position: absolute;
-  overflow: visible;
-  width: 186px;
-  white-space: nowrap;
-  text-align: left;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 1);
-}
-#New_Game_Button {
-  position: absolute;
-  width: 230px;
-  height: 53px;
-  left: 70px;
-  top: 56px;
-  overflow: visible;
-}
-#New_Game_Background {
-  fill: rgba(172, 203, 225, 1);
-  stroke: rgba(255, 255, 255, 1);
-  stroke-width: 1px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-.New_Game_Background {
-  position: absolute;
-  overflow: visible;
-  width: 230px;
-  height: 53px;
-  left: 0px;
-  top: 0px;
-}
-#New_Game {
-  left: 57px;
-  top: 11px;
-  position: absolute;
-  overflow: visible;
-  width: 117px;
-  white-space: nowrap;
-  text-align: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 1);
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  overflow: scroll;
+}
+
+header {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7c98b3;
+  padding: 20px 40px;
+}
+
+#Header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header_Link {
+  text-decoration: none;
+  color: inherit;
+  color: #fff;
+  background-color: #accbe1;
+  padding: 7px 25px;
+  border: 0.2px solid #fff;
+  border-radius: 10px;
+}
 #Account_Settings_Text {
   left: 77px;
   top: 220px;
   position: absolute;
   overflow: visible;
-  width: 328px;
   white-space: nowrap;
   text-align: left;
   font-family: Roboto;
@@ -188,6 +105,7 @@
 
 #Change_Username_Text:hover {
   color: rgb(85, 85, 85);
+  cursor: pointer;
 }
 
 #Password_Text {
@@ -235,6 +153,7 @@
 }
 
 #Change_Password_Text:hover {
+  cursor: pointer;
   color: rgb(85, 85, 85);
 }
 
@@ -353,7 +272,9 @@
   color: rgb(85, 85, 85);
 }
 
-#Back_Button {
+#Save_Button {
+  display: none;
+  cursor: pointer;
   position: absolute;
   width: 564px;
   height: 53px;
@@ -365,11 +286,11 @@
   --web-action-target: new_game_page.html;
   cursor: pointer;
 }
-#Back_Button_Background {
+#Save_Button_Background {
   fill: rgba(172, 203, 225, 1);
   shape-rendering: auto;
 }
-.Back_Button_Background {
+.Save_Button_Background {
   position: absolute;
   overflow: visible;
   width: 564px;
@@ -377,7 +298,7 @@
   left: 0px;
   top: 0px;
 }
-#Back_Button_Text {
+#Save_Button_Text {
   left: 200px;
   top: 11px;
   position: absolute;
