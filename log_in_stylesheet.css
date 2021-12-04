@@ -13,454 +13,114 @@
     box-sizing: border-box;
     border: none;
 }
+html, body {
+    height: 100%;
+    font-family: Roboto;
+}
+
 #Log-in_Page {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    background-color: rgba(255,255,255,1);
+    display: grid;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     --web-view-name: Log-in Page;
     --web-view-id: Log-in_Page;
     --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
 }
-#Right_Panel {
-    position: absolute;
-    width: 959px;
-    height: 1081px;
-    left: 961px;
-    top: 0px;
-    overflow: visible;
-}
-#Right_Panel_Background {
-    fill: rgba(124,152,179,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Right_Panel_Background {
-    position: absolute;
-    overflow: visible;
-    width: 959px;
-    height: 1081px;
-    left: 0px;
-    top: 0px;
-}
-#Log_In_Box {
-    position: absolute;
-    width: 698px;
-    height: 533px;
-    left: 131px;
-    top: 274px;
-    overflow: visible;
-}
-#Log_In_Background {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Log_In_Background {
-    position: absolute;
-    overflow: visible;
-    width: 698px;
-    height: 533px;
-    left: 0px;
-    top: 0px;
-}
-#Log_In_Button {
-    position: absolute;
-    width: 564px;
-    height: 53px;
-    left: 67px;
-    top: 407px;
-    overflow: visible;
-    --web-animation: fadein 0.3s ease-out;
-    --web-action-type: page;
-    --web-action-target: new_game_page.html;
-    cursor: pointer;
-}
-#Log_In_Button_Background {
-    fill: rgba(172,203,225,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Log_In_Button_Background {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
-}
-#Log_In_Button_Text {
-    left: 249px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 68px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#Password {
-    position: absolute;
-    width: 564px;
-    height: 87px;
-    left: 67px;
-    top: 253px;
-    overflow: visible;
-}
-#Password_Input_a {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Password_Input_a {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 34px;
-    font-family: Roboto;
-}
-#Password_Title {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 63px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(85,85,85,1);
-}
-#EmailUsername {
-    position: absolute;
-    width: 564px;
-    height: 86px;
-    left: 67px;
-    top: 127px;
-    overflow: visible;
+
+#Left_Panel {
+    background-color: #fff;
+    grid-column: 1;
+    height: 100%;
 }
 
-input[type=text], input[type=password], input[type=email] {
-    font-family: Roboto;
-    padding: 10px;
-    width: 564px;
-    height: 53px;
-    border: 1px solid rgba(112,112,112,1);
-    border-radius: 13px;
+#Header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 14%;
+    margin-left: 5%;
 }
 
-#EmailUsername_Input {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.EmailUsername_Input {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 33px;
-    font-family: Roboto;
-}
-#EmailUsername_Title {
-    left: 1px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 105px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(85,85,85,1);
-}
-#Log_In_Section_Title {
-    left: 67px;
-    top: 46px;
-    position: absolute;
-    overflow: visible;
-    width: 112px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgba(85,85,85,1);
-}
-#Game_Title {
-    left: 95px;
-    top: 62px;
-    position: absolute;
-    overflow: visible;
-    width: 140px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: rgba(112,112,112,1);
-}
-#Create_Account {
-    position: absolute;
-    width: 564px;
-    height: 650px;
-    left: 165px;
-    top: 216px;
-    overflow: visible;
-}
-#Create_Account_Button {
-    position: absolute;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 597px;
-    overflow: visible;
-    --web-animation: fadein 0.3s ease-out;
-    --web-action-type: page;
-    --web-action-target: new_game_page.html;
-    cursor: pointer;
-}
-#Create_Account_Background {
-    fill: rgba(172,203,225,1);
-    stroke: rgba(255,255,255,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Create_Account_Background {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
-}
-#Create_Account_Text {
-    left: 199px;
-    top: 11px;
-    position: absolute;
-    overflow: visible;
-    width: 168px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: rgba(255,255,255,1);
-}
-#Retype_Password {
-    position: absolute;
-    width: 564px;
-    height: 87px;
-    left: 0px;
-    top: 460px;
-    overflow: visible;
-}
-#Re-type_Password_Input {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Re-type_Password_Input {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 34px;
-}
-#Re-type_Password {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 113px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(85,85,85,1);
-}
-#Password {
-    position: absolute;
-    width: 564px;
-    height: 87px;
-    left: 0px;
-    top: 333px;
-    overflow: visible;
-}
-#Password_Input {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Password_Input {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 34px;
-}
-#Password_ {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 63px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(85,85,85,1);
-}
-#Username {
-    position: absolute;
-    width: 564px;
-    height: 86px;
-    left: 0px;
-    top: 207px;
-    overflow: visible;
-}
-#Username_Input {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Username_Input {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 33px;
-}
-#Username_ {
-    left: 1px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 64px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(85,85,85,1);
-}
-#Email {
-    position: absolute;
-    width: 564px;
-    height: 86px;
-    left: 0px;
-    top: 81px;
-    overflow: visible;
-}
-#Email_Input {
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Email_Input {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 33px;
-}
-#Email_ {
-    left: 1px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 36px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(85,85,85,1);
-}
-#Create_an_account {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 328px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgba(85,85,85,1);
-}
 #Hangman_Img {
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    left: 25px;
-    top: 55px;
-    overflow: visible;
+    margin-right: 3%;
+}
+
+#Hangman_Txt {
+    color: #707070;
+    font-weight: normal;
+    font-size: xx-large;
+}
+
+#Create_Account {
+    width: 65%;
+}
+
+#Create_Account_Header {
+    width: 100%;
+    color: #555555;
+}
+
+#Create_Account_Button {
+    color: #fff;
+    background-color: #ACCBE1;
+    font-weight: bold;
+    font-size: large;
+}
+
+#Right_Panel {
+    background-color: #7C98B3;
+    grid-column: 2;
+    height: 100%;
+}
+
+#Log_In {
+    background-color: #fff;
+    width: 65%;
+    margin-top: 30%;
+    padding: 50px 50px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+#Log_In_Header {
+    color: #555555;
+    width: 100%;
+}
+
+#Log_In_Button {
+    color: #fff;
+    background-color: #ACCBE1;
+    font-weight: bold;
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Input_Div {
+    margin: 60px 0;
+}
+
+label {
+    color: #555555;
+    font-size: small;
+}
+
+input, button {
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+button {
+    cursor: pointer;
 }
