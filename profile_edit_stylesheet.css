@@ -1,10 +1,9 @@
 #Profile_Edit_Page {
-  overflow-y: scroll;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 1);
-  overflow: hidden;
+
   --web-view-name: Account Settings Page;
   --web-view-id: Account_Settings_Page;
   --web-scale-on-resize: true;
@@ -48,7 +47,7 @@ header {
 }
 #Account_Settings_Text {
   left: 77px;
-  top: 220px;
+  top: 60px;
   position: absolute;
   overflow: visible;
   white-space: nowrap;
@@ -61,7 +60,7 @@ header {
 }
 #Username_Text {
   left: 180px;
-  top: 300px;
+  top: 140px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -76,7 +75,7 @@ header {
 
 #abcd123_Text {
   left: 400px;
-  top: 300px;
+  top: 140px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -90,7 +89,7 @@ header {
 
 #Change_Username_Text {
   left: 770px;
-  top: 300px;
+  top: 140px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -110,7 +109,7 @@ header {
 
 #Password_Text {
   left: 180px;
-  top: 380px;
+  top: 220px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -125,7 +124,7 @@ header {
 
 #password123_Text {
   left: 400px;
-  top: 380px;
+  top: 220px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -139,7 +138,7 @@ header {
 
 #Change_Password_Text {
   left: 770px;
-  top: 380px;
+  top: 220px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -159,7 +158,7 @@ header {
 
 #Wins_Text {
   left: 245px;
-  top: 460px;
+  top: 300px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -174,7 +173,7 @@ header {
 
 #Wins_Amount_Text {
   left: 400px;
-  top: 460px;
+  top: 300px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -188,7 +187,7 @@ header {
 
 #Losses_Text {
   left: 220px;
-  top: 540px;
+  top: 380px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -203,7 +202,7 @@ header {
 
 #Losses_Amount_Text {
   left: 400px;
-  top: 540px;
+  top: 380px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -217,7 +216,7 @@ header {
 
 #Games_Played_Text {
   left: 120px;
-  top: 620px;
+  top: 460px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -232,7 +231,7 @@ header {
 
 #Games_Amount_Text {
   left: 400px;
-  top: 620px;
+  top: 460px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -246,7 +245,7 @@ header {
 
 #Words_Played_Text {
   left: 130px;
-  top: 700px;
+  top: 540px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -260,7 +259,7 @@ header {
 }
 #Words_Text {
   left: 400px;
-  top: 700px;
+  top: 540px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -278,8 +277,8 @@ header {
   position: absolute;
   width: 564px;
   height: 53px;
-  left: 700px;
-  top: 850px;
+  left: 400px;
+  top: 620px;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -311,4 +310,109 @@ header {
   font-weight: bold;
   font-size: 24px;
   color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1100px) {
+  #Account_Settings_Text {
+    font-size: 30px;
+  }
+
+  #Username_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #abcd123_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Change_Username_Text {
+    font-size: 22px;
+    left: 600px;
+  }
+
+  #Password_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #password123_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Change_Password_Text {
+    font-size: 22px;
+    left: 600px;
+  }
+
+  #Wins_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Wins_Amount_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Losses_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Losses_Amount_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Games_Played_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Games_Amount_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Words_Played_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+  #Words_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Save_Button {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 400px;
+    height: 53px;
+    left: 77px;
+    top: 620px;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: new_game_page.html;
+    cursor: pointer;
+  }
+  #Save_Button_Background {
+    fill: rgba(172, 203, 225, 1);
+    shape-rendering: auto;
+  }
+  .Save_Button_Background {
+    position: absolute;
+    overflow: visible;
+    width: 564px;
+    height: 53px;
+    left: 0px;
+    top: 0px;
+  }
+  #Save_Button_Text {
+    font-size: 24px;
+  }
 }
