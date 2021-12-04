@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("#Change_Username_Text").click(function () {
-    var userinput = $("<input>", {
+    userinput = $("<input>", {
       val: $("#abcd123_Text  span").text(),
       type: "text",
       id: "abcd123_Text",
@@ -19,5 +19,10 @@ $(document).ready(function () {
     Save_Button.style.display = "inline-block";
     $("#password123_Text").replaceWith(passwordinput);
     passwordinput.select();
+  });
+
+  $("#Save_Button").click(function () {
+    window.location.reload();
+
   });
 });
