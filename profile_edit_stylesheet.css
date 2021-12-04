@@ -313,7 +313,7 @@ header {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1100px) {
-  #Account_Settings_Text {
+  */ #Account_Settings_Text {
     font-size: 30px;
   }
 

@@ -23,5 +23,6 @@ $(document).ready(function () {
 
   $("#Save_Button").click(function () {
     window.location.reload();
+
   });
 });
