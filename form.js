@@ -59,7 +59,6 @@ window.addEventListener("load", function () {
         // success message
         sendRequest.addEventListener("load", function (event) {
             window.location.replace('new_game.html');
-            // alert("logged in")
         });
 
         // open endpoint and send data
