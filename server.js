@@ -38,7 +38,6 @@ app.get("/app/", (req, res, next) => {
 
 // Define other CRUD API endpoints using express.js and better-sqlite3
 
-// EXAMPLE CODE: var data = {user: req.body.user, pass: req.body.pass ? md5(req.body.pass) : null}
 // CREATE a new user (HTTP method POST) at endpoint /app/new/
 app.post("/app/new/user", upload.none(), (req, res, next) => {
     var data = {
@@ -46,10 +45,10 @@ app.post("/app/new/user", upload.none(), (req, res, next) => {
         email: req.body.email,
         pass: req.body.pass ? md5(req.body.pass) : null
     }
-    
+
     const stmt = db.prepare("INSERT INTO userinfo(user, pass, email) VALUES (?, ?, ?)");
     const info = stmt.run(data.user, data.pass, data.email);
-    
+
     res.json({ "message": info.changes + " record created: ID " + info.lastInsertRowid + " (201)" });
     res.status(201);
 })
@@ -60,6 +59,20 @@ app.get("/app/users", (req, res) => {
     res.status(200).json(stmt);
 });
 
+// Redirect to game page if correctly logged in
+app.post('/app/auth', function (req, res) {
+    var data = {
+        user: req.body.loginUser,
+        pass: req.body.loginPass ? md5(req.body.loginPass) : null
+    }
+
+    if (data.user && data.pass) {
+        const stmt = db.prepare('SELECT * FROM userinfo WHERE user = ? AND pass = ?')
+        const info = stmt.run(data.user, data.pass);
+        res.redirect('main_game.html');
+    }
+});
+
 // READ a single user (HTTP method GET) at endpoint /app/user/:id
 app.get("/app/user/:id", (req, res) => {
     const stmt = db.prepare("SELECT * FROM userinfo WHERE id = ?").get(req.params.id);
@@ -68,7 +81,7 @@ app.get("/app/user/:id", (req, res) => {
 
 // UPDATE a single user (HTTP method PATCH) at endpoint /app/update/user/:id
 app.patch("/app/update/user/:id", upload.none(), (req, res) => {
-    
+
     var data = {
         user: req.body.user,
         email: req.body.email,
@@ -77,7 +90,7 @@ app.patch("/app/update/user/:id", upload.none(), (req, res) => {
 
     const stmt = db.prepare("UPDATE userinfo SET user = COALESCE(?, user), pass = COALESCE(?, pass), email = COALESCE(?, email) WHERE id = ?");
     const info = stmt.run(data.user, data.pass, data.email, req.params.id);
-    
+
     res.json({ "message": info.changes + " record updated: ID " + req.params.id + " (200)" });
     res.status(200);
 })
