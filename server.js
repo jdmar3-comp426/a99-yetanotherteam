@@ -60,7 +60,7 @@ app.get("/app/users", (req, res) => {
 });
 
 // Redirect to game page if correctly logged in
-app.get('/app/auth', function (req, res) {
+app.post('/app/auth', function (req, res) {
     var data = {
         user: req.body.loginUser,
         pass: req.body.loginPass ? md5(req.body.loginPass) : null
@@ -68,19 +68,9 @@ app.get('/app/auth', function (req, res) {
 
     if (data.user && data.pass) {
         const stmt = db.prepare('SELECT * FROM userinfo WHERE user = ? AND pass = ?')
-        const info = stmt.run([data.user, data.pass], function (err, result) {
-            if (err) {
-                res.send('Incorrect Username and/or Password')
-                return;
-            }
-            res.redirect('/new_game.html');
-        })
-    } else {
-        res.send('Please enter Username and Password!');
-        res.end();
+        const info = stmt.run(data.user, data.pass);
+        res.redirect('main_game.html');
     }
-    // res.json({ "message": "logged in: ID " + req.params.id + " (201)" });
-    // res.status(201);
 });
 
 // READ a single user (HTTP method GET) at endpoint /app/user/:id
