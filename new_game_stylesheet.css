@@ -51,20 +51,16 @@ header {
   flex-direction: column;
 }
 
-#New_Game {
-
-}
-
 #New_Game_Header {
   font-size: xx-large;
   color: #7C98B3;
-  margin: 7% 0;
+  margin: 5% 0;
 }
 
 #New_Game_Hangman_Img {
   height: 100px;
   width: 80px;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 
 #Play_Button {
