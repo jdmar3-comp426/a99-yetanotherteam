@@ -8,69 +8,18 @@
     <title>New Game</title>
   </head>
   <body>
-    <div id="Profile_Edit_Page">
-      <svg class="Header">
-        <rect
-          id="Header"
-          rx="0"
-          ry="0"
-          x="0"
-          y="0"
-          width="1920"
-          height="165"
-        ></rect>
-      </svg>
-      <div id="Game_Title">
-        <span>Hangman</span>
+    <header>
+      <a href="new_game.html" class="Header_Link">New Game</a>
+      <div id="Header">
+        <img id="Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
+				<h2 id="Hangman_Txt">Hangman</h2>
       </div>
-      <img
-        id="Hangman_Img"
-        src="images/hangman.png"
-        srcset="images/hangman.png 1x, images/hangman@2x.png 2x"
-      />
+      <a href="profile_edit.html" class="Header_Link">Profile</a>
+    </header>
 
-      <div id="Account_Settings_Button">
-        <svg class="Account_Settings_Background">
-          <rect
-            id="Account_Settings_Background"
-            rx="13"
-            ry="13"
-            x="0"
-            y="0"
-            width="237"
-            height="53"
-          ></rect>
-        </svg>
-        <div id="Account_Settings">
-          <span>Account Settings</span>
-        </div>
-      </div>
-      <div id="New_Game_Button">
-        <svg class="New_Game_Background">
-          <rect
-            id="New_Game_Background"
-            rx="13"
-            ry="13"
-            x="0"
-            y="0"
-            width="230"
-            height="53"
-          ></rect>
-        </svg>
-        <div id="New_Game">
-          <span>New Game</span>
-        </div>
-      </div>
-
-      
-<div id="Page_Title">
-        <span>New Game</span>
-      </div>
-      <img
-        id="hangman"
-        src="images/hangman.png"
-        srcset="images/hangman.png 1x, images/hangman@2x.png 2x"
-      />
+    <div id="New_Game" class="container">
+      <h2 id="New_Game_Header">New Game</h2>
+      <img id="New_Game_Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
       <div id="Choose_Difficulty">
         <div class="dropdown">
           <button class="dropdown_button">Choose the difficulty</button>
@@ -92,25 +41,7 @@
           </div>
         </div>
       </div>
-
-      <div onclick="main_game.html" id="Play_Button">
-        <svg class="Play_Background">
-          <rect
-            id="Play_Background"
-            rx="13"
-            ry="13"
-            x="0"
-            y="0"
-            width="333"
-            height="53"
-          ></rect>
-        </svg>
-        <div id="Play_Text">
-          <span>Play</span>
-        </div>
-      </div>
-     
-      </div>
+      <button id="Play_Button">Play</button>
     </div>
   </body>
 </html>
