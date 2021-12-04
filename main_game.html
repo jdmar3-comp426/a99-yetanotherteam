@@ -8,24 +8,31 @@
   <title>Hangman</title>
 </head>
 <body>
+  <header>
+    <a href="new_game.html" class="Header_Link">New Game</a>
+    <div id="Header">
+      <img id="Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
+      <h2 id="Hangman_Txt">Hangman</h2>
+    </div>
+    <a href="profile_edit.html" class="Header_Link">Profile</a>
+  </header>
 <div class="container">
     <div class="banner_head">
-        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+        <!-- <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
         <img src="./images/hangman@2x.png">
-        <h1 class="text-center">Hangman</h1>
-        <div class="attempts">
-          <p>&emsp;Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></p>
-        </div>
-        <div class="game_count">
-            <p>&emsp;&emsp;Win: <span id="win_tot">0</span>&emsp; Losses: <span id="loss_tot">0</span></p>
-        </div> 
+        <h1 class="text-center">Hangman</h1> -->
+        
     </div>
   <div class="text-center">
+    <div class="attempts">
+      <p>&emsp;Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></p>
+    </div>
+    <div class="game_count">
+        <p>&emsp;&emsp;Win: <span id="win_tot">0</span>&emsp; Losses: <span id="loss_tot">0</span></p>
+    </div> 
     <img id='hangmanPic' src="./images/0.png" alt="">
     <p id="wordSpotlight">The word to be guessed goes here</p>
     <div id="keyboard"></div><br>
-    <button id="new_game_button" onClick="reset()">New Game</button>
-    <button id="account_settings_button" onClick="load_act_settings()">Account Settings</button>
   </div> 
 </div>
 <script src='./game_function.js'></script>
