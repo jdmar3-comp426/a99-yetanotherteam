@@ -73,7 +73,7 @@ app.get('/app/auth', function (req, res) {
                 res.send('Incorrect Username and/or Password')
                 return;
             }
-            res.redirect('/new_game');
+            res.redirect('/new_game.html');
         })
     } else {
         res.send('Please enter Username and Password!');

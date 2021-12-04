@@ -58,6 +58,7 @@ window.addEventListener("load", function () {
 
         // success message
         sendRequest.addEventListener("load", function (event) {
+            window.location("new_game.html")
             alert("Successfully logged in");
         });
 
