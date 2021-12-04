@@ -39,7 +39,7 @@
 							<input type="password" class="Re-type_Password_Input" name="pass_retype" id="pass_retype"
 								placeholder="Password" required>
 						</div>
-						<button id="Create_Account_Button">Create Account</button>
+						<button type="submit" id="Create_Account_Button">Create Account</button>
 					</form>
 				</div>
 			</div>
@@ -48,18 +48,18 @@
 		<div id="Right_Panel">
 			<div class="container">
 				<div id="Log_In">
-					<form action="">
+					<form id="loginForm" action="">
 						<h2 id="Log_In_Header">Log In</h2>
 						<div id="EmailUsername" class="Input_Div">
-							<label id="EmailUsername_Title" for="emailusername_input">Email/Username</label><br>
-							<input type="text" class="EmailUserName_Input" name="emailusername_input"
+							<label id="EmailUsername_Title" for="loginUser">Username</label><br>
+							<input type="text" class="EmailUserName_Input" name="loginUser" id="loginUser"
 								placeholder="Email/Username" required>
 						</div>
 						<div id="Password" class="Input_Div">
-							<label id="Password_Title" for="password_input_a">Password</label><br>
-							<input type="text" id="Password_Input_a" name="password_input_a" placeholder="Password" required>
+							<label id="Password_Title" for="passUser">Password</label><br>
+							<input type="password" id="passUser" name="passUser" placeholder="Password" required>
 						</div>
-						<button id="Log_In_Button">Log In</button>
+						<button type="submit" id="Log_In_Button">Log In</button>
 					</form>
 				</div>
 			</div>
