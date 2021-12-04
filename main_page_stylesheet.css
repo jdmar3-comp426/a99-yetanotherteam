@@ -41,21 +41,6 @@
     text-align: right;
 }
 
-
-.banner_head{
-    background-color: rgba(124,152,179,1);
-    color: rgba(255,255,255,1);
-    font-family: Roboto;
-    font-size: 32px;
-}
-
-
-.banner_head img{
-    float: center;
-    width: 75px;
-    height: 75px;
-}
-
 body {
     text-align: center;
 }
@@ -65,48 +50,6 @@ body {
     display: inline-block;
     overflow: hidden;
 }
-
-.banner_head > *{
-    display: inline-block;
-    
-}
-
-#new_game_button{
-    float: left;
-    border-radius: 8px;
-    border: 2px solid;
-    border-color: rgba(255,255,255,1);
-    background-color: rgba(172,203,225,1);
-    text-align: center;
-    display: inline-block;
-    margin: 40px;
-    width: 200px;
-    height: 50px;
-    color: rgba(255,255,255,1);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-#account_settings_button{
-    float: right;
-    border-radius: 8px;
-    border: 2px solid;
-    border-color: rgba(255,255,255,1);
-    background-color: rgba(172,203,225,1);
-    text-align: center;
-    display: inline-block;
-    margin: 40px;
-    width: 200px;
-    height: 50px;
-    color: rgba(255,255,255,1);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px; 
-}
-
 
 .keyboard_buttons{
     overflow: visible;
