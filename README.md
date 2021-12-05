@@ -32,4 +32,4 @@ As noted in `package.json`:
 After cloning repository, run `npm install` and then `npm run start` from the terminal to launch the game. You must first create an account, and then can use your login credentials to start the game.
 
 ## Walkthrough
-[Youtube Link](PUT LINK HERE)
+[Youtube Link](https://www.youtube.com/watch?v=vHyKBrLUsrQ)
