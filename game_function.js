@@ -1,17 +1,7 @@
 /**
  * Create an array of possible words
  */
-var programming_languages = [
-    "python",
-    "javascript",
-    "json",
-    "java",
-    "html",
-    "css",
-    "c",
-    "csharp",
-    "sql"
-]
+ var word_list = [];
 
 /**
  * Define global variables
@@ -23,13 +13,36 @@ let guessed = [];
 let wordStatus = null;
 let wins = 0;
 let loss = 0;
+let category = "";
+let first_flag = 1;
 
 /**
  * Choosing a random word for the game
  */
 function randomWord()
 {
-    answer = programming_languages[Math.floor(Math.random() * programming_languages.length)]; 
+  if(first_flag === 1)
+  {
+      setWordList();
+      first_flag = 0;
+  }
+  
+  if(word_list.length > 1)
+  {
+      answer = word_list[Math.floor(Math.random() * word_list.length)];
+      console.log("Before " + word_list);
+      word_list= word_list.filter(e => e !== answer); 
+      console.log("After " + word_list);
+  }
+  else if(word_list.length == 1)
+  {
+      answer = word_list[0];
+      word_list= word_list.filter(e => e !== answer);
+  }
+  else
+  {
+      gameWon();
+  }
 }
 
 /**
@@ -81,13 +94,21 @@ function generateButtons() {
  * Checks if the current word is equal to the actual,
  * updates total wins and prints message while removing keyboard
  */
-  function checkIfGameWon() {
-    if (wordStatus === answer) {
-      document.getElementById('keyboard').innerHTML = 'You Won!!!';
-      wins++
-      document.getElementById('win_tot').innerHTML = wins;
+ function checkIfGameWon() {
+  if (wordStatus === answer) {
+    document.getElementById('keyboard').innerHTML = 'You Won!!!';
+    wins++
+    document.getElementById('win_tot').innerHTML = wins;
+    
+    if(word_list.length === 0)
+    {
+        gameWon();
+        document.getElementById("new_game_button").disabled = true;
+        document.getElementById('reset_btn').disabled = false;
     }
+    document.getElementById('reset_btn').disabled = false;
   }
+}
   
   /**
    * Checks if the current word is NOT equal to the actual and maxWrong has been reached,
@@ -99,6 +120,7 @@ function generateButtons() {
       document.getElementById('keyboard').innerHTML = 'You Lost!!!';
       loss++;
       document.getElementById('loss_tot').innerHTML = loss;
+      document.getElementById('reset_btn').disabled = false;
     }
   }
 
@@ -127,6 +149,7 @@ function generateButtons() {
       mistakes = 0;
       guessed = [];
       document.getElementById('hangmanPic').src = './images/0.png';
+      document.getElementById('reset_btn').disabled = true;
       
       randomWord();
       guessedWord();
@@ -141,6 +164,34 @@ function generateButtons() {
     window.location.href = "./new_game.html";
   }
 
+
+  function setWordList()
+  {
+    //Set the right category list
+    if(category === "car")
+    {
+      word_list = ["tacoma", "colorado", "bronco", "wrangler", "outback", "altima", "pilot"];
+    }
+    else if (category === "cities")
+    {
+      word_list = ["durham", "raleigh", "wilmington", "greensboro", "charlotte", "boone", "apex", "cary"];
+    }
+    else if (category === "animals")
+    {
+      word_list = ["cow", "pig", "sheep", "duck", "goose", "horse", "dog", "goat"];
+    }
+    else
+    {
+      word_list = ["python", "javascript", "java", "html", "csharp", "json", "sql", "c", "css", "vb"];
+    }
+  }
+  
+  function gameWon()
+  {
+      document.getElementById('wordSpotlight').innerHTML = 'Congradulations! You Won!';
+      document.getElementById('keyboard').innerHTML = 'Your a master of' + category;
+  }
+
   //Sets the maximum number of attempts
   document.getElementById('maxWrong').innerHTML = maxWrong;
 
@@ -149,6 +200,9 @@ function generateButtons() {
  * 2. Generate the keyboard
  * 3. Update the blanks based on guesses
  */
+ console.log("Start");
+ var queryString = location.search.substring(1);
+ category = queryString.split('=')[1];
 randomWord();
 generateButtons();
 guessedWord();

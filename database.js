@@ -21,6 +21,13 @@ if (row === undefined) {
             pass TEXT, 
             email TEXT 
         );
+
+        CREATE TABLE interactions (
+            id INTEGER,
+            wins INTEGER,
+            losses INTEGER,
+            id REFERENCES userinfo(id)
+        )
     `
     ;
 // Execute SQL commands that we just wrote above.

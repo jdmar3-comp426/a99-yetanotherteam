@@ -21,27 +21,19 @@
       <h2 id="New_Game_Header">New Game</h2>
       <img id="New_Game_Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
       <div id="Choose_Difficulty">
-        <div class="dropdown">
-          <button class="dropdown_button">Choose the difficulty</button>
-          <div class="dropdown_options">
-            <a href="#">Easy</a>
-            <a href="#">Medium</a>
-            <a href="#">Hard</a>
-          </div>
-        </div>
-      </div>
       <div id="Choose_Category_Dropdown">
-        <div class="category_dropdown">
-          <button class="dropdown_button">Choose the category</button>
-          <div class="dropdown_options">
-            <a href="#">Cars</a>
-            <a href="#">Cities</a>
-            <a href="#">Animals</a>
-            <a href="#">Holidays</a>
+        <div class="dropdown">
+          <button class="dropdown_button" onclick="myFunction()">Choose the category</button>
+          <div id= "myDropdown" class="dropdown_options">
+            <a href="#" onclick="setCat('car')">Cars</a>
+            <a href="#" onclick="setCat('cities')">Cities</a>
+            <a href="#" onclick="setCat('animals')">Animals</a>
+            <a href="#" onclick="setCat('prog')">Programming Languages</a>
           </div>
         </div>
       </div>
-      <button id="Play_Button">Play</button>
     </div>
+    <button id="Play_Button" onclick="play()">Play</button>
+    <script src= "new_game.js"></script>
   </body>
 </html>
