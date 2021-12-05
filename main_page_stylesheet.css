@@ -98,3 +98,21 @@ body {
     margin-top: 0px;
     text-align: center;
 }
+
+#reset_btn{
+  float: center;
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: rgba(255,255,255,1);
+  background-color: rgba(172,203,225,1);
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+  color: rgba(255,255,255,1);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
