@@ -122,6 +122,34 @@ header {
   color: rgba(112, 112, 112, 1);
 }
 
+#Email_Text {
+  left: 235px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+#comp126_Text {
+  left: 400px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
 #password123_Text {
   left: 400px;
   top: 220px;
@@ -151,6 +179,24 @@ header {
   text-decoration: underline;
 }
 
+#Change_Email_Text {
+  left: 770px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(124, 152, 179);
+  text-decoration: underline;
+}
+#Change_Email_Text:hover {
+  cursor: pointer;
+  color: rgb(85, 85, 85);
+}
 #Change_Password_Text:hover {
   cursor: pointer;
   color: rgb(85, 85, 85);
@@ -158,7 +204,7 @@ header {
 
 #Wins_Text {
   left: 245px;
-  top: 300px;
+  top: 380px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -173,7 +219,7 @@ header {
 
 #Wins_Amount_Text {
   left: 400px;
-  top: 300px;
+  top: 380px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -187,7 +233,7 @@ header {
 
 #Losses_Text {
   left: 220px;
-  top: 380px;
+  top: 460px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -202,7 +248,7 @@ header {
 
 #Losses_Amount_Text {
   left: 400px;
-  top: 380px;
+  top: 460px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -216,7 +262,7 @@ header {
 
 #Games_Played_Text {
   left: 120px;
-  top: 460px;
+  top: 540px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -231,7 +277,7 @@ header {
 
 #Games_Amount_Text {
   left: 400px;
-  top: 460px;
+  top: 540px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -245,7 +291,7 @@ header {
 
 #Words_Played_Text {
   left: 130px;
-  top: 540px;
+  top: 620px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -259,7 +305,7 @@ header {
 }
 #Words_Text {
   left: 400px;
-  top: 540px;
+  top: 620px;
   position: absolute;
   overflow: visible;
   width: 328px;
@@ -278,7 +324,7 @@ header {
   width: 564px;
   height: 53px;
   left: 400px;
-  top: 620px;
+  top: 700px;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -322,11 +368,19 @@ header {
     left: 77px;
   }
 
+  #Email_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
   #abcd123_Text {
     font-size: 22px;
     left: 250px;
   }
-
+  #comp126_Text {
+    font-size: 22px;
+    left: 250px;
+  }
   #Change_Username_Text {
     font-size: 22px;
     left: 600px;
@@ -346,7 +400,10 @@ header {
     font-size: 22px;
     left: 600px;
   }
-
+  #Change_Email_Text {
+    font-size: 22px;
+    left: 600px;
+  }
   #Wins_Text {
     font-size: 22px;
     left: 77px;
@@ -387,31 +444,9 @@ header {
   }
 
   #Save_Button {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    width: 400px;
-    height: 53px;
     left: 77px;
-    top: 620px;
-    overflow: visible;
-    --web-animation: fadein 0.3s ease-out;
-    --web-action-type: page;
-    --web-action-target: new_game_page.html;
-    cursor: pointer;
   }
-  #Save_Button_Background {
-    fill: rgba(172, 203, 225, 1);
-    shape-rendering: auto;
-  }
-  .Save_Button_Background {
-    position: absolute;
-    overflow: visible;
-    width: 564px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
-  }
+
   #Save_Button_Text {
     font-size: 24px;
   }
