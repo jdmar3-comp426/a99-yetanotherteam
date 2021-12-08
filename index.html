@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="log_in_stylesheet.css">
+	<title>Log-in Page</title>
+	<script src="form.js"></script>
+</head>
+
+<body>
+	<section id="Log-in_Page">
+		<div id="Left_Panel">
+			<div id="Header">
+				<img id="Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
+				<h2 id="Hangman_Txt">Hangman</h2>
+			</div>
+			<div class="container">
+				<div id="Create_Account">
+					<form id="signupForm">
+						<h2 id="Create_Account_Header">Create an Account</h2>
+						<div id="Email" class="Input_Div">
+							<label id="Email_" for="email">Email</label><br>
+							<input type="email" class="Email_Input" name="email" id="email" placeholder="Email" required>
+						</div>
+						<div id="Username" class="Input_Div">
+							<label id="Username_" for="user">Username</label><br>
+							<input type="text" class="Username_Input" name="user" id="user" placeholder="Username" required>
+						</div>
+						<div id="Password" class="Input_Div">
+							<label id="Password_" for="pass">Password</label><br>
+							<input type="password" class="Password_Input" name="pass" id="pass"
+								placeholder="Password" required>
+						</div>
+						<div id="Retype_Password" class="Input_Div">
+							<label id="Re-type_Password" for="pass_retype">Re-type Password</label><br>
+							<input type="password" class="Re-type_Password_Input" name="pass_retype" id="pass_retype"
+								placeholder="Password" required>
+						</div>
+						<button type="submit" id="Create_Account_Button">Create Account</button>
+					</form>
+				</div>
+			</div>
+			<br><br>
+		</div>
+		<div id="Right_Panel">
+			<div class="container">
+				<div id="Log_In">
+					<form id="loginForm" action="">
+						<h2 id="Log_In_Header">Log In</h2>
+						<div id="EmailUsername" class="Input_Div">
+							<label id="EmailUsername_Title" for="loginUser">Username</label><br>
+							<input type="text" class="EmailUserName_Input" name="loginUser" id="loginUser"
+								placeholder="Username" required>
+						</div>
+						<div id="Password" class="Input_Div">
+							<label id="Password_Title" for="passUser">Password</label><br>
+							<input type="password" id="passUser" name="passUser" placeholder="Password" required>
+						</div>
+						<button type="submit" id="Log_In_Button">Log In</button>
+					</form>
+				</div>
+			</div>
+			<br><br>
+		</div>
+	</div>
+</body>
+
+</html>

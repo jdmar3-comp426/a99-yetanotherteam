@@ -1,0 +1,453 @@
+#Profile_Edit_Page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+
+  --web-view-name: Account Settings Page;
+  --web-view-id: Account_Settings_Page;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: scroll;
+}
+
+header {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7c98b3;
+  padding: 20px 40px;
+}
+
+#Header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header_Link {
+  text-decoration: none;
+  color: inherit;
+  color: #fff;
+  background-color: #accbe1;
+  padding: 7px 25px;
+  border: 0.2px solid #fff;
+  border-radius: 10px;
+}
+#Account_Settings_Text {
+  left: 77px;
+  top: 60px;
+  position: absolute;
+  overflow: visible;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  color: rgba(85, 85, 85, 1);
+}
+#Username_Text {
+  left: 180px;
+  top: 140px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#abcd123_Text {
+  left: 400px;
+  top: 140px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Change_Username_Text {
+  left: 770px;
+  top: 140px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(124, 152, 179);
+  text-decoration: underline;
+}
+
+#Change_Username_Text:hover {
+  color: rgb(85, 85, 85);
+  cursor: pointer;
+}
+
+#Password_Text {
+  left: 180px;
+  top: 220px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Email_Text {
+  left: 235px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+#comp126_Text {
+  left: 400px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#password123_Text {
+  left: 400px;
+  top: 220px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Change_Password_Text {
+  left: 770px;
+  top: 220px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(124, 152, 179);
+  text-decoration: underline;
+}
+
+#Change_Email_Text {
+  left: 770px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(124, 152, 179);
+  text-decoration: underline;
+}
+#Change_Email_Text:hover {
+  cursor: pointer;
+  color: rgb(85, 85, 85);
+}
+#Change_Password_Text:hover {
+  cursor: pointer;
+  color: rgb(85, 85, 85);
+}
+
+#Wins_Text {
+  left: 245px;
+  top: 380px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Wins_Amount_Text {
+  left: 400px;
+  top: 380px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Losses_Text {
+  left: 220px;
+  top: 460px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Losses_Amount_Text {
+  left: 400px;
+  top: 460px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Games_Played_Text {
+  left: 120px;
+  top: 540px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+
+#Games_Amount_Text {
+  left: 400px;
+  top: 540px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Words_Played_Text {
+  left: 130px;
+  top: 620px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(112, 112, 112, 1);
+}
+#Words_Text {
+  left: 400px;
+  top: 620px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(85, 85, 85);
+}
+
+#Save_Button {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  width: 564px;
+  height: 53px;
+  left: 400px;
+  top: 700px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: new_game_page.html;
+  cursor: pointer;
+}
+#Save_Button_Background {
+  fill: rgba(172, 203, 225, 1);
+  shape-rendering: auto;
+}
+.Save_Button_Background {
+  position: absolute;
+  overflow: visible;
+  width: 564px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
+}
+#Save_Button_Text {
+  left: 200px;
+  top: 11px;
+  position: absolute;
+  overflow: visible;
+  width: 68px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1100px) {
+  */ #Account_Settings_Text {
+    font-size: 30px;
+  }
+
+  #Username_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Email_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #abcd123_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+  #comp126_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+  #Change_Username_Text {
+    font-size: 22px;
+    left: 600px;
+  }
+
+  #Password_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #password123_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Change_Password_Text {
+    font-size: 22px;
+    left: 600px;
+  }
+  #Change_Email_Text {
+    font-size: 22px;
+    left: 600px;
+  }
+  #Wins_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Wins_Amount_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Losses_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Losses_Amount_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Games_Played_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+
+  #Games_Amount_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Words_Played_Text {
+    font-size: 22px;
+    left: 77px;
+  }
+  #Words_Text {
+    font-size: 22px;
+    left: 250px;
+  }
+
+  #Save_Button {
+    left: 77px;
+  }
+
+  #Save_Button_Text {
+    font-size: 24px;
+  }
+}

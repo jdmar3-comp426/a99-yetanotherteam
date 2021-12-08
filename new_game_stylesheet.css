@@ -1,0 +1,148 @@
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+header {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7C98B3;
+  padding: 20px 40px;
+}
+
+#Header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header_Link {
+  text-decoration: none;
+  color: inherit;
+  color: #fff;
+  background-color: #ACCBE1;
+  padding: 7px 25px;
+  border: 0.2px solid #fff;
+  border-radius: 10px;
+}
+
+#New_Game_Page {
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  --web-view-name: New Game Page;
+  --web-view-id: New_Game_Page;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#New_Game_Header {
+  font-size: xx-large;
+  color: #7C98B3;
+  margin: 5% 0;
+}
+
+#New_Game_Hangman_Img {
+  height: 100px;
+  width: 80px;
+  margin-bottom: 5%;
+}
+
+#Play_Button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #ACCBE1;
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  height: 53px;
+  padding: 10px;
+  margin-top: 3px;
+  width: 333px;
+  margin: 5% 0;
+}
+
+.dropdown_button {
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(112, 112, 112, 1);
+  border-style: solid;
+  border-radius: 5px;
+  border-width: thin;
+  color: rgba(112, 112, 112, 1);
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 333px;
+  height: 53px;
+  font-family: Roboto;
+  margin: 3% 0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+  /* left: 810px;
+  top: 610px; */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown_options {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  min-width: 333px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: Roboto;
+  border-radius: 13px;
+}
+
+/* Links inside the dropdown */
+.dropdown_options a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Roboto;
+  border-radius: 13px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown_options a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_options {
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.category_dropdown {
+  /* position: relative; */
+  display: inline-block;
+  /* left: 810px;
+  top: 650px; */
+}
+
+/* Show the dropdown menu on hover */
+.category_dropdown:hover .dropdown_options {
+  display: block;
+}

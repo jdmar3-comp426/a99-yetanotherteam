@@ -1,0 +1,127 @@
+.mediaViewInfo {
+    --web-view-name: Log-in Page;
+    --web-view-id: Log-in_Page;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Log-in_Page;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+html, body {
+    height: 100%;
+    font-family: Roboto;
+}
+
+#Log-in_Page {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    --web-view-name: Log-in Page;
+    --web-view-id: Log-in_Page;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#Left_Panel {
+    background-color: #fff;
+    grid-column: 1;
+    height: 100%;
+}
+
+#Header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 14%;
+    margin-left: 5%;
+}
+
+#Hangman_Img {
+    margin-right: 3%;
+}
+
+#Hangman_Txt {
+    color: #707070;
+    font-weight: normal;
+    font-size: xx-large;
+}
+
+#Create_Account {
+    width: 65%;
+}
+
+#Create_Account_Header {
+    width: 100%;
+    color: #555555;
+}
+
+#Create_Account_Button {
+    color: #fff;
+    background-color: #ACCBE1;
+    font-weight: bold;
+    font-size: large;
+}
+
+#Right_Panel {
+    background-color: #7C98B3;
+    grid-column: 2;
+    height: 100%;
+}
+
+#Log_In {
+    background-color: #fff;
+    width: 65%;
+    margin-top: 30%;
+    padding: 50px 50px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+#Log_In_Header {
+    color: #555555;
+    width: 100%;
+}
+
+#Log_In_Button {
+    color: #fff;
+    background-color: #ACCBE1;
+    font-weight: bold;
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Input_Div {
+    margin: 60px 0;
+}
+
+label {
+    color: #555555;
+    font-size: small;
+}
+
+input, button {
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+button {
+    cursor: pointer;
+}

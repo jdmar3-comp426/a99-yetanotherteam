@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new_game_stylesheet.css" />
+    <title>New Game</title>
+  </head>
+  <body>
+    <header>
+      <a href="new_game.html" class="Header_Link">New Game</a>
+      <div id="Header">
+        <img id="Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
+				<h2 id="Hangman_Txt">Hangman</h2>
+      </div>
+      <a href="profile_edit.html" class="Header_Link">Profile</a>
+    </header>
+
+    <div id="New_Game" class="container">
+      <h2 id="New_Game_Header">New Game</h2>
+      <img id="New_Game_Hangman_Img" src="images/hangman.png" srcset="images/hangman.png 1x, images/hangman@2x.png 2x">
+      <div id="Choose_Difficulty">
+      <div id="Choose_Category_Dropdown">
+        <div class="dropdown">
+          <button class="dropdown_button" onclick="myFunction()">Choose the category</button>
+          <div id= "myDropdown" class="dropdown_options">
+            <a href="#" onclick="setCat('car')">Cars</a>
+            <a href="#" onclick="setCat('cities')">Cities</a>
+            <a href="#" onclick="setCat('animals')">Animals</a>
+            <a href="#" onclick="setCat('prog')">Programming Languages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="Play_Button" onclick="play()">Play</button>
+    <script src= "new_game.js"></script>
+  </body>
+</html>
